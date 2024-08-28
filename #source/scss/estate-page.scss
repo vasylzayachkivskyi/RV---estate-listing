@@ -2362,6 +2362,14 @@
 
 @media (max-width: 575.8px) {
 
+    .propos-btn.bluebtn {
+        font-size: 12px;
+    }
+    .estcard__additional-col span{
+        max-width: 150px;
+        padding-right: 5px;
+    }
+
     .estpage__slider-widget{
         display: none;
     }
@@ -2554,6 +2562,7 @@
 }
 
 @media (max-width: 375px) {
+
     .estpage__slider-btns a {
         margin-right: 5px;
     }
