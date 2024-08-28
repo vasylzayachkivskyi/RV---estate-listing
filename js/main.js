@@ -21,6 +21,13 @@ $(document).ready(function () {
 
             768: {
                 slidesPerView: "auto",
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                    renderFraction: function (currentClass, totalClass) {
+                        return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+                    },
+                },
             },
         },
     });
@@ -31,13 +38,24 @@ $(document).ready(function () {
         loop: true,
         pagination: {
             el: ".swiper-pagination",
-            // type: "fraction",        
+            type: "bullets",        
         },
-        // navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev",
-        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
         keyboard: true,
+        breakpoints: {
+
+            576: {
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",        
+                },
+            },
+        },
+
+  
     });
 
     //  gallery ----------- //

@@ -556,7 +556,7 @@
 
 .estcard__box {
    width: 100%;
-   padding: 16px 24px;
+   padding: 8px;
    border-radius: 8px;
    background: #FBFBFB;
    margin-bottom: 16px;
@@ -718,7 +718,7 @@
    h2 {
       color: #22232A;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 130%;
       margin-bottom: 8px;
    }
@@ -890,7 +890,6 @@
 .estcard__user {
    display: flex;
    align-items: center;
-   margin-bottom: 24px;
 }
 
 .estcard__user-img {
@@ -1426,5 +1425,11 @@
 
    .estate__item-top p {
       font-size: 11px;
+   }
+}
+
+@media(max-width:767.8px) {
+   .estcard {
+      background: #fbfbfb;
    }
 }
